@@ -1,0 +1,42 @@
+@import "../variables";
+
+.header {
+  max-width: $max-width;
+  margin: auto;
+  background-color: $main-color;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+  box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+
+  &__heading {
+    margin: 0;
+    padding: 0 15px;
+  }
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+  }
+
+  &__item {
+    height: 100%;
+  }
+
+  &__link {
+    display: block;
+    color: white;
+    padding: 20px 15px;
+    height: 100%;
+    text-decoration: none;
+    transition: 200ms ease-in-out;
+
+    &:hover, &:focus {
+      background-color: $active-color;
+    }
+  }
+}

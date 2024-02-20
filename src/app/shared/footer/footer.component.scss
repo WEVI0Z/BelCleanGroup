@@ -1,0 +1,56 @@
+@import "../variables";
+
+.footer {
+  max-width: $max-width;
+  margin: 50px auto 0 auto;
+  padding: 15px;
+  background-color: $main-color;
+  display: flex;
+  color: white;
+  box-sizing: border-box;
+  align-items: center;
+  -webkit-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+  box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+
+  &__heading {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.item {
+  max-width: 240px;
+  min-width: 100px;
+  padding: 0;
+  margin-bottom: 20px;
+
+  &__name {
+    margin: 0;
+  }
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import "../shared/variables";
+
+.main {
+  max-width: $max-width;
+  margin: 20px auto 0 auto;
+
+  &__heading {
+    width: 100%;
+    background-color: $active-color;
+    color: white;
+    box-sizing: border-box;
+    padding: 15px;
+    -webkit-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.card {
+  display: flex;
+  max-width: 270px;
+  background-color: $active-color;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+  box-shadow: 0 0 8px 4px rgba(34, 60, 80, 0.2);
+
+  &__image {
+    margin-top: 10px;
+    width: 250px;
+
+  }
+
+  &__name {
+    color: white;
+    padding: 0 15px;
+  }
+}
