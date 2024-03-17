@@ -3,52 +3,10 @@
 <main class="main">
   <h2 class="main__heading">Витрина:</h2>
   <ul class="main__list">
-    <li class="main__item">
-      <a href="#" class="main__card card">
-        <img src="./assets/items/example.jpg" alt="" class="card__image">
-        <h3 class="card__name">Пеленка медицинская нестерильная, КОМПЛЕКТ 10 шт., 140х200 см, спанлейс 50 г/м2, белые</h3>
-      </a>
-    </li>
-    <li class="main__item">
-      <a href="#" class="main__card card">
-        <img src="./assets/items/example.jpg" alt="" class="card__image">
-        <h3 class="card__name">Пеленка медицинская нестерильная, КОМПЛЕКТ 10 шт., 140х200 см, спанлейс 50 г/м2, белые</h3>
-      </a>
-    </li>
-    <li class="main__item">
-      <a href="#" class="main__card card">
-        <img src="./assets/items/example.jpg" alt="" class="card__image">
-        <h3 class="card__name">Пеленка медицинская нестерильная, КОМПЛЕКТ 10 шт., 140х200 см, спанлейс 50 г/м2, белые</h3>
-      </a>
-    </li>
-    <li class="main__item">
-      <a href="#" class="main__card card">
-        <img src="./assets/items/example.jpg" alt="" class="card__image">
-        <h3 class="card__name">Пеленка медицинская нестерильная, КОМПЛЕКТ 10 шт., 140х200 см, спанлейс 50 г/м2, белые</h3>
-      </a>
-    </li>
-    <li class="main__item">
-      <a href="#" class="main__card card">
-        <img src="./assets/items/example.jpg" alt="" class="card__image">
-        <h3 class="card__name">Пеленка медицинская нестерильная, КОМПЛЕКТ 10 шт., 140х200 см, спанлейс 50 г/м2, белые</h3>
-      </a>
-    </li>
-    <li class="main__item">
-      <a href="#" class="main__card card">
-        <img src="./assets/items/example.jpg" alt="" class="card__image">
-        <h3 class="card__name">Пеленка медицинская нестерильная, КОМПЛЕКТ 10 шт., 140х200 см, спанлейс 50 г/м2, белые</h3>
-      </a>
-    </li>
-    <li class="main__item">
-      <a href="#" class="main__card card">
-        <img src="./assets/items/example.jpg" alt="" class="card__image">
-        <h3 class="card__name">Пеленка медицинская нестерильная, КОМПЛЕКТ 10 шт., 140х200 см, спанлейс 50 г/м2, белые</h3>
-      </a>
-    </li>
-    <li class="main__item">
-      <a href="#" class="main__card card">
-        <img src="./assets/items/example.jpg" alt="" class="card__image">
-        <h3 class="card__name">Пеленка медицинская нестерильная, КОМПЛЕКТ 10 шт., 140х200 см, спанлейс 50 г/м2, белые</h3>
+    <li class="main__item" *ngFor="let item of itemList">
+      <a href="" [routerLink]="'/item/' + item.name" class="main__card card">
+        <img [src]="'../../assets/' + item.photos[0].url" [alt]="item.name" class="card__image">
+        <h3 class="card__name">{{item.shortDescription}}</h3>
       </a>
     </li>
   </ul>

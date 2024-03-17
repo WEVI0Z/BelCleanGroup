@@ -1,0 +1,24 @@
+<app-header></app-header>
+
+<main class="item">
+  <div class="item__left-part">
+    <img [src]="'../../assets/' + item.photos[0].url" [alt]="item.shortDescription" class="item__image item__image--main">
+    <div class="item__purchase">
+      Заказать:
+      <ul class="item__phones">
+        <li class="item__phone">
+          <a href="tel:+375298697339">8-(029)-869-73-39 (МТС)</a>
+        </li>
+        <li class="item__phone">
+          <a href="tel:+375296273519">8-(029)-627-35-19 (A1)</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="item__right-part">
+    <h2 class="item__name">{{item.shortDescription}}</h2>
+    <p class="item__description">{{item.description}}</p>
+  </div>
+</main>
+
+<app-footer></app-footer>

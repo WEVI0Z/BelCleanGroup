@@ -1,0 +1,59 @@
+@import "../shared/variables";
+
+.item {
+  max-width: $max-width;
+  margin: 20px auto 0 auto;
+  display: flex;
+
+  &__name {
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__description {
+    font-size: 20px;
+  }
+
+  &__left-part {
+    max-width: 380px;
+    padding: 20px;
+  }
+
+  &__right-part {
+    max-width: 780px;
+    padding: 20px;
+  }
+
+  &__image {
+    width: 380px;
+    height: 380px;
+  }
+
+  &__purchase {
+    margin-top: 30px;
+    background-color: $main-color;
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+  }
+
+  &__phones {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__phone {
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 30px;
+
+      &:active, &:focus, &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
