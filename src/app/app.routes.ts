@@ -11,6 +11,14 @@ export const routes: Routes = [
      loadChildren: () => import("./item/item.module").then(m => m.ItemModule),
     },
     {
+      path: "contacts",
+      loadChildren: () => import("./contacts/contacts.module").then(m => m.ContactsModule),
+    },
+    {
+      path: "about",
+      loadChildren: () => import("./about/about.module").then(m => m.AboutModule),
+    },
+    {
       path: "**",
       redirectTo: ""
     }

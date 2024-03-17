@@ -1,0 +1,54 @@
+@import "../shared/variables";
+
+.contacts {
+  max-width: $max-width;
+  margin: 50px auto 0 auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+
+  &__heading {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+  }
+
+  &__list {
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.item {
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+
+  &__name {
+    margin: 0;
+  }
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+}
