@@ -74,8 +74,8 @@
           "defaultConfiguration": "development",
           "options": {
             "allowedHosts": [
-              "wevioz.by",
-              "www.wevioz.by"
+              "bel-clean-group.by",
+              "www.bel-clean-group.by"
             ]
           }
         },

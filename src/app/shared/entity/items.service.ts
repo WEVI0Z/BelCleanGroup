@@ -16,6 +16,7 @@ import {napkins2} from "./napkins-2";
 import {cart12} from "./cart-12";
 import {cart13} from "./cart-13";
 import {cart14} from "./cart-14";
+import {napkins3} from "./napkins-3";
 
 @Injectable({
   providedIn: 'root'
@@ -26,6 +27,7 @@ export class ItemsService {
   constructor() {
     this.items.push(napkins);
     this.items.push(napkins2);
+    this.items.push(napkins3);
     this.items.push(cart1);
     this.items.push(cart2);
     this.items.push(cart3);
